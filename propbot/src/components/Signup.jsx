@@ -4,7 +4,7 @@ import { auth } from "../../firebaseconfig";
 import modern from "../assets/modern.png";
 import { useNavigate } from "react-router-dom";
 import Head from "./Head";
-
+import { Link } from "react-router-dom";
 export default function Signup() {
   const [formData, setFormData] = useState({
     name: "",
