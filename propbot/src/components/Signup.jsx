@@ -99,9 +99,10 @@ export default function Signup() {
 
           <p className="mt-4 text-sm">
             Already have an account?{" "}
-            <a href="/login" className="text-[var(--blue)] hover:underline">
-              Log in
-            </a>
+            <Link to="/login">
+              <a href="" className="text-[var(--blue)] hover:underline">
+                Log in
+              </a>  </Link>
           </p>
         </div>
 
