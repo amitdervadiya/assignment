@@ -5,7 +5,7 @@ export default function ProtectedRoute({ children }) {
 
   if (!user) {
     alert("⚠️ You must login first to access this page.");
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/signup" replace />;
   }
 
   return children;
