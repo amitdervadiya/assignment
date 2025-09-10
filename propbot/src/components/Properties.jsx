@@ -99,14 +99,13 @@ export default function Properties() {
 
   const PropertyCard = ({ property, buttonText }) => (
     <div className="bg-[#F1F1F1] rounded-[12px] shadow hover:shadow-lg transition border overflow-hidden p-2">
-      {/* Image */}
+  
       <img
         src={property.image}
         alt={property.title}
         className="w-full h-48 object-cover rounded-[12px]"
       />
 
-      {/* Content */}
       <div className="p-4">
         <div className="flex justify-between items-center text-sm mb-2 text-gray-600">
           <span className="flex items-center gap-2">

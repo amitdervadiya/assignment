@@ -29,7 +29,7 @@ export default function FeaturedProperty() {
     <>
       <Nav />
       <div className="max-w-7xl mx-auto px-4 py-10">
-        {/* Filter Dropdown */}
+ 
         <div className="flex justify-end mb-8">
           <select
             value={filter}
@@ -42,14 +42,14 @@ export default function FeaturedProperty() {
           </select>
         </div>
 
-        {/* Properties Grid */}
+   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProperties.map((property) => (
             <div
               key={property.id}
               className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
             >
-              {/* Property Image */}
+       
               <div className="relative">
                 <img
                   src={property.image}
@@ -61,31 +61,31 @@ export default function FeaturedProperty() {
                 </span>
               </div>
 
-              {/* Property Details */}
+       
               <div className="p-5 space-y-3">
                 <h3 className="text-lg font-semibold text-[#3A3E2D]">
                   {property.name}
                 </h3>
 
-                {/* Location */}
+        
                 <div className="flex items-center text-gray-600 text-sm">
                   <FiMapPin className="mr-2 text-[#998254]" />
                   {property.city}, {property.country}
                 </div>
 
-                {/* Owner Info */}
+       
                 <div className="flex items-center text-gray-600 text-sm">
                   <FiUser className="mr-2 text-[#998254]" />
                   {property.ownerName}
                 </div>
 
-                {/* Contact */}
+        
                 <div className="flex items-center text-gray-600 text-sm">
                   <FiPhone className="mr-2 text-[#998254]" />
                   {property.contactNumber}
                 </div>
 
-                {/* Price + Action */}
+
                 <div className="flex items-center justify-between pt-4 border-t border-[#E6E2D3]">
                   <span className="text-xl font-bold text-[#998254]">
                     ${property.price || "N/A"}

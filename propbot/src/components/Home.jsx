@@ -51,7 +51,6 @@ export default function Home() {
         <>
             <Hero />
 
-            {/* What we do section */}
             <section className="w-full py-12">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <h2 className="text-2xl md:text-3xl font-bold text-[var(--blue)] mb-2">
@@ -77,8 +76,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            {/* Featured properties */}
             <section className="py-12 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">

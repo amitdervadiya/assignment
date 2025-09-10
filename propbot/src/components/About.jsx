@@ -43,21 +43,18 @@ export default function About() {
       </Link>
     </div>
 
-    {/* Property Cards */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {properties.map((property) => (
         <div
           key={property.id}
           className="relative rounded-2xl shadow-lg group "
         >
-          {/* Property Image */}
           <img
             src={property.image}
             alt={property.title}
             className="w-full h-60 md:h-72 object-cover bg-center rounded-2xl"
           />
 
-          {/* Overlapping Card */}
           <div className="absolute bottom-0 left-0 right-0 px-4 pb-4">
             <div className="bg-white rounded-xl shadow-md p-5 transform md:translate-y-1/3">
               <div className="flex items-center justify-between gap-2 text-gray-700 font-medium mb-2">

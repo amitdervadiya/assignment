@@ -39,7 +39,6 @@ export default function Buy() {
         </select>
       </div>
 
-      {/* Location */}
       <div className="flex justify-between items-center px-4 rounded-full w-full md:w-[200px] border bg-white border-[#979797]">
         <img src={locate} alt="location" className="h-5 w-5" />
         <select className="flex-1 px-2 py-2 text-gray-700 text-sm md:text-base focus:outline-none border-none bg-transparent">
@@ -49,7 +48,6 @@ export default function Buy() {
         </select>
       </div>
 
-      {/* Button */}
       <button className="w-full md:w-auto bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-full font-medium text-sm md:text-base">
         Find Property
       </button>

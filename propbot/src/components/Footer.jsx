@@ -12,7 +12,6 @@ export default function Footer() {
             Subscribe now for exclusive property insights and deals!
           </p>
       
-          {/* Email Input */}
           <div className="flex justify-center max-sm:px-2">
             <div className="flex flex-col sm:flex-row w-full max-w-md rounded-xl overflow-hidden bg-[var(--grey)]">
               <input
@@ -26,16 +25,13 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      
-        {/* Bottom Section */}
         <div className="max-w-6xl mx-auto mt-12 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-white/20 pt-6 text-center md:text-left">
-          {/* Logo */}
+      
           <div className="flex items-center gap-2 justify-center md:justify-start">
             <img src={logo} alt="PropBot Logo" className="h-5 w-5" />
             <span className="font-semibold text-white">PropBot</span>
           </div>
       
-          {/* Links */}
           <div className="flex flex-col md:flex-row gap-3 md:gap-6 text-sm text-gray-200">
             <a href="#" className="hover:underline">For Sale</a>
             <a href="#" className="hover:underline">Rentals</a>
@@ -43,7 +39,6 @@ export default function Footer() {
             <a href="#" className="hover:underline">Property News</a>
           </div>
       
-          {/* Copyright */}
           <p className="text-xs text-gray-300">
             ©2025 PropBot. All rights reserved
           </p>

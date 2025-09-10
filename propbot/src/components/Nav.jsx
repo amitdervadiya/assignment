@@ -7,22 +7,20 @@ import logo from "../assets/logo-h.png"
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Styles for active/inactive links
   const linkClasses = ({ isActive }) =>
     isActive
-      ? "text-[#998254] font-semibold" // active = gold highlight
+      ? "text-[#998254] font-semibold" 
       : "text-gray-700 hover:text-[#998254] transition";
 
   return (
     <header className="w-full shadow-sm bg-white z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Logo */}
+     
         <div className="flex items-center gap-2 text-xl font-bold text-gray-900">
        <img src={logo} alt="" className="h-5 w-5" />
           <span>PropBot</span>
         </div>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           <NavLink to="/home" className={linkClasses}>
             Home
@@ -33,14 +31,14 @@ export default function Header() {
 
         </nav>
 
-        {/* Login Button */}
+     
         <NavLink to="/login">
           <button className="hidden md:flex items-center gap-2 bg-[var(--blue)] text-white px-5 py-2 rounded-full hover:bg-[#565c42] transition">
             Login / Register <FiArrowRight />
           </button>
         </NavLink>
 
-        {/* Mobile Menu Toggle */}
+    
         <button
           className="md:hidden text-2xl"
           onClick={() => setIsOpen(!isOpen)}
@@ -49,7 +47,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Nav */}
+  
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <nav className="flex flex-col items-center gap-4 py-4">
