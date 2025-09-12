@@ -13,8 +13,7 @@ export default function Signup() {
     confirmPassword: "",
   });
   const navigate = useNavigate();
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,20 +21,20 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError("");
-    setSuccess("");
+    alert("");
+  alert("");
 
     if (formData.password !== formData.confirmPassword) {
-      setError("Passwords do not match");
+      alert("Passwords do not match");
       return;
     }
 
     try {
       await createUserWithEmailAndPassword(auth, formData.email, formData.password);
-      setSuccess("Account created successfully!");
+      alert("Account created successfully!");
       navigate("/login");
     } catch (err) {
-      setError(err.message);
+      alert(err.message);
     }
   };
 
@@ -86,8 +85,6 @@ export default function Signup() {
               required
             />
 
-            {error && <p className="text-red-500 text-sm">{error}</p>}
-            {success && <p className="text-green-500 text-sm">{success}</p>}
 
             <button
               type="submit"

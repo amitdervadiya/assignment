@@ -8,7 +8,6 @@ import Head from "./Head";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -18,7 +17,7 @@ export default function Login() {
       localStorage.setItem("user", JSON.stringify(userdata.user));
       navigate("/home");
     } catch (err) {
-      setError(err.message);
+      alert(err.message);
     }
   };
 
@@ -47,7 +46,6 @@ export default function Login() {
               required
             />
 
-            {error && <p className="text-red-500 text-sm">{error}</p>}
 
             <div className="flex justify-between items-center text-sm text-gray-600">
               <label className="flex items-center">

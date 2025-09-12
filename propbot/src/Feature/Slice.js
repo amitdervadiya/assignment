@@ -28,7 +28,6 @@ const propertySlice = createSlice({
             .addCase(fetchProperties.fulfilled, (state, action) => {
                 state.loading = false;
 
-                // ✅ Add type field (mocking rent/buy alternately)
                 state.items = action.payload.map((property, index) => ({
                     ...property,
                     type: index % 2 === 0 ? "rent" : "buy",
